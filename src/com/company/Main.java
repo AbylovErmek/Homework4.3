@@ -7,8 +7,8 @@ public class Main {
     public static void main(String[] args) {
         System.out.println("Введите названия обьектов в Список А:");
         ArrayList<String> list1 = new ArrayList<>();
+        Scanner scanner = new Scanner(System.in);
         while (list1.size() < 5) {
-            Scanner scanner = new Scanner(System.in);
             String s1 = scanner.nextLine();
             list1.add(s1);
         }
@@ -17,8 +17,8 @@ public class Main {
 
         System.out.println("Введите названия обьектов в Список Б:");
         ArrayList<String> list2 = new ArrayList<>();
+        Scanner sc = new Scanner(System.in);
         while (list2.size() < 5) {
-            Scanner sc = new Scanner(System.in);
             String s2 = sc.nextLine();
             list2.add(s2);
         }
@@ -37,7 +37,7 @@ public class Main {
                 iterator1.remove();
                 break;
             }
-        String s = iterator.next();
+            String s = iterator.next();
             list3.add(s);
         }
 
@@ -56,3 +56,4 @@ public class Main {
 
     }
 }
+
